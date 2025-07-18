@@ -1,0 +1,91 @@
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background: linear-gradient(to right, #1e3c72, #2a5298); /* Blue gradient background */
+    color: white;
+    margin: 0;
+    padding: 50px 0;
+  }
+
+  h1 {
+    margin-bottom: 20px;
+    font-size: 36px;
+  }
+
+  #display {
+    width: 320px;
+    height: 60px;
+    font-size: 26px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: right;
+    background-color: #f0f0f0;
+    color: #333;
+  }
+
+  button {
+    width: 70px;
+    height: 50px;
+    margin: 6px;
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+  }
+
+  button:hover {
+    transform: scale(1.05);
+  }
+
+  /* Different button themes */
+  button[onclick*="append('sin"] {
+    background-color: #ff7f50; /* Coral for trig buttons */
+    color: white;
+  }
+
+  button[onclick*="append('cos"] {
+    background-color: #ffa07a;
+    color: white;
+  }
+
+  button[onclick*="append('tan"] {
+    background-color: #f08080;
+    color: white;
+  }
+
+  button[onclick*="clearDisplay"] {
+    background-color: #dc3545; /* Red for clear */
+    color: white;
+  }
+
+  button[onclick*="calculate"] {
+    background-color: #28a745; /* Green for equals */
+    color: white;
+  }
+
+  button[onclick*="append('+"],
+  button[onclick*="append('-"],
+  button[onclick*="append('*"],
+  button[onclick*="append('/')"] {
+    background-color: #007bff; /* Blue for operators */
+    color: white;
+  }
+
+  button:not([onclick*="append('sin"]) 
+         :not([onclick*="append('cos"]) 
+         :not([onclick*="append('tan"])
+         :not([onclick*="append('+"])
+         :not([onclick*="append('-"])
+         :not([onclick*="append('*"])
+         :not([onclick*="append('/')"])
+         :not([onclick*="clearDisplay"])
+         :not([onclick*="calculate"]) {
+    background-color: #e0e0e0; /* Light gray for numbers */
+    color: #333;
+  }
+
+</style>
